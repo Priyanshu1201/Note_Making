@@ -1,0 +1,7 @@
+<form action="" method="POST">
+    {% csrf_token %}
+    <!-- <input type="text" name="title" id="myInput" placeholder="Title...">
+    <input type="text" name="notes" id="myNotes" placeholder="Notes..."> -->
+    {{todos.as_p}}
+    <button type="submit">Edit</button>
+</form>
